@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Noto+Serif&family=Poppins:wght@400;500;700&display=swap');
+body {
+    font-size: 13px;
+}
+.body-copy-sans {
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.copyright {
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.bottoni-small {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.6923076923076923em;
+    font-weight: 600;
+}
+a {
+    text-decoration: none
+}
+.hover:hover {
+    color: rgba(243, 146, 0, 1)!important;
+    transition: 1s ease-out;
+}
+@keyframes bg-animation {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes move{
+    from {
+        left: -400px;
+
+    }
+    to {
+        left: 0px;
+    }
+}
+@keyframes move_right {
+    from {
+        right: -400px;
+    }
+    to {
+        right: 0px;
+    }
+}
+@keyframes header {
+    from {
+        top: -200px
+    }
+    to {
+        top: 0px;
+    }
+}
+.dida {
+    font-family: 'Noto Serif', serif;
+    font-size: 0.7692307692307693em;
+    font-weight: 400;
+}
+.copy-caps {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+}
+.copy-sans {
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.auto_img {
+    width: auto;
+}
+.body-copy {
+    font-family: 'Noto Serif', serif;
+    font-size: 1em;
+    font-weight: 400;
+}
+.body-link-bold {
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+.small-copy {
+    font-size: 0.6923076923076923em;
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+}
+img {
+    width: 100%;
+}
+.gray {
+    color: rgba(181, 183, 195, 1);
+}
+header {
+    animation-name: header;
+    position: relative;
+    animation-duration: 2s;
+    ul {
+        display: flex;
+        gap: 15%;
+        li {
+            a {
+                display: flex;
+                gap: 5%;
+            }
+
+        }
+    }
+   .header-end {
+    gap: 30%;
+   }
+}
+h1 {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 4.615384615384615em;
+    font-weight: 700;
+}
+h2 {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 3.076923076923077em;
+}
+h3 {
+    font-family: 'Abhaya Libre', serif;
+    font-size: 1.8461538461538463em;
+}
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3846153846153846em;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(270deg, #3D3D3C 0%, rgba(61, 61, 60, 0.2) 100%), url(../img/young-woman-repainting-furniture-with-diy-2021-08-28-11-04-49-utc.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: bg-animation;
+    animation-duration: 3s;
+}
+.main_info_left {
+    align-items: end;
+    display: grid;
+    position: relative;
+    animation: move 2s;
+}
+.main_info_right {
+    width: 80%;
+    display: grid;
+    gap: 4%;
+    position: relative;
+    animation: move_right 2s;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    div {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+    .img_main {
+            width: 134px;
+            height: 134px;
+            background-image: url(../img/1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    .img_main2 {
+        width: 134px;
+            height: 134px;
+            background-image: url(../img/2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+    .img_main3 {
+        width: 134px;
+            height: 134px;
+            background-image: url(../img/3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+    .text-main {
+            grid-template-columns: auto;
+        }
+    }
+.span-orange {
+    color: rgba(243, 146, 0, 1);
+}
+.tittle-border {
+    border-bottom: 2px solid rgba(181, 183, 195, 1);
+    display: flex;
+    align-items: baseline;
+}
+.btn-w-100 {
+    width: 100%;
+    padding: 5px;
+}
+.btn-w-60 {
+    width: 60%;
+}
+.mondi {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 5%;
+    justify-content: center;
+    div {
+        height: 122px;
+        width: 122px;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+}
+.sponsor {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    position: relative;
+    .none {
+        display: none;
+    }
+    div {
+        
+        height: 193px;
+        align-items: center;
+        display: grid;
+    }
+}
+.left {
+    position: absolute;
+    left: -34px;
+    top: 102px;
+}
+.right {
+    position: absolute;
+    top: 102px;
+    right: -34px;
+}
+.search {
+    font-size: 2em;
+}
+.bottom-border {
+    border-bottom: 2px solid rgba(61, 61, 60, 1);
+    height: 40px;
+    font-size: 30px;
+    span {
+        display: flex;
+        gap: 3%;
+        justify-content: end;
+    }
+}
+.girl {
+    width: 56px;
+    height: 56px;
+}
+
+.list {
+    gap: 10%;
+}
+@media screen and (max-width:750px) {
+    .left {
+        left: 0;
+    }
+    .right {
+        right: 0;
+    }
+    body {
+        font-size: 10px;
+    }
+    .main {
+        background-position: center;
+
+    }
+    .mondi {
+        grid-template-columns: auto;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .sponsor {
+        justify-content: center;
+        div {
+            display: none;
+        }
+        .none {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .list {
+        gap: 4%;
+    }
+}
