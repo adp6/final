@@ -5,6 +5,12 @@
 body {
     font-size: 13px;
 }
+.radius {
+    border-radius: 2px 2px 0px 0px;
+}
+.radius1 {
+    border-radius: 2px 0px 0px 2px;
+}
 .body-copy-sans {
     font-size: 1em;
     font-weight: 500;
@@ -269,6 +275,7 @@ h4 {
 
 .list {
     gap: 10%;
+    display: flex;
 }
 @media screen and (max-width:750px) {
     .left {
@@ -282,7 +289,14 @@ h4 {
     }
     .main {
         background-position: center;
-
+        grid-template-columns: auto;
+        margin-bottom: 20em!important;
+    }
+    .main_info_right {
+        width: 100%;
+        div {
+            grid-template-columns: 40% 60%;
+        }   
     }
     .mondi {
         grid-template-columns: auto;
@@ -301,6 +315,11 @@ h4 {
         }
     }
     .list {
-        gap: 4%;
+        gap: 0%;
+        text-align: center;
+        display: block;
+    }
+    ul {
+        display: block;
     }
 }
