@@ -89,6 +89,7 @@ a {
 .background_fondini {
     background-color: rgba(244, 236, 232, 1);
 }
+
 .auto_img {
     width: auto;
 }
@@ -288,6 +289,9 @@ h4 {
     display: flex;
 }
 @media screen and (max-width:750px) {
+    .weight-700 {
+        font-weight: 700;
+    }
     .left {
         left: 0;
     }
